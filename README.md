@@ -482,7 +482,7 @@ Update your Prometheus configuration (prometheus.yml) to add a new job for scrap
 
 
 ```
-  - job_name: 'Netflix'
+  - job_name: 'k8s'
     metrics_path: '/metrics'
     static_configs:
       - targets: ['node1Ip:9100']
