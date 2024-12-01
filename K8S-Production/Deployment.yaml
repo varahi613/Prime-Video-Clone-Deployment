@@ -2,23 +2,23 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: amazon-prime
-  namespace: selector
+  namespace: default
   labels:
-    app: prime
+    app: prime-app
 spec:
   selector:
     matchLabels:
-      app: prime
+      app: prime-app
   replicas: 2
   template:
     metadata:
-      name: prime-pod
+      name: amazon-prime
       labels:
-        app: prime
+        app: prime-app
     spec:
       containers:
       - name: prime-container
-        image: kanha05/amazon-prime:13
+        image: kanha05/amazon-prime:14
         ports:
         - containerPort: 3000
       
