@@ -6,7 +6,7 @@ metadata:
     app: prime-service
 spec:
   selector:
-      app: prime
+      app: prime-app
   ports:
     - port: 3000
       targetPort: 3000
