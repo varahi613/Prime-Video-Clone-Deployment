@@ -18,7 +18,7 @@ spec:
     spec:
       containers:
       - name: prime-container
-        image: kanha05/amazon-prime:14
+        image: kanha05/amazon-prime:15
         ports:
         - containerPort: 3000
       
